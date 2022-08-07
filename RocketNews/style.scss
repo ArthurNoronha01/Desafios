@@ -82,12 +82,11 @@ main{
         gap: 10px;
 
         #email{
-            border: px solid red;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
             height: 3em;
-            width: 50em;
+            width: 55em;
             
             position: relative;
 
@@ -98,8 +97,11 @@ main{
                 width: 95%;
                 height: 100%;
                 background-color: $text-color;
-                border: none;
+                border-left: 5px solid $title-color;
                 outline: none;
+                
+                font-size: 20px;
+                padding-left: 10px;
 
             }
 
@@ -148,4 +150,13 @@ main{
         height: 100%;
         
     }
+}
+
+.invalido{
+    outline: 3px solid rgb(150, 19, 19);
+
+}
+
+.valido{
+    outline: 3px solid #04D361;
 }
