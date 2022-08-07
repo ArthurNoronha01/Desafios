@@ -13,6 +13,7 @@ $text-color: #E1E1E6;
 $title-color: #04D361;
 $form-color: #A8A8A8;
 $bg-button-color: #8257e5;
+$invalido : #f0330ddc;
 
 $weight_title: 700;
 $weight_text: 500;
@@ -71,6 +72,10 @@ main{
             }
 
         }
+
+        #text :nth-child(3){
+            color: $form-color;
+        }
         
     }
 
@@ -90,17 +95,21 @@ main{
             
             position: relative;
 
-            box-shadow: 3px 5px 8px 5px rgba(18, 18, 18, 0.808);;
+            box-shadow: 3px 5px 8px 5px rgba(18, 18, 18, 0.808);
             
+            input{
+                border: none;
+            }
+
             #caixa_email{
                 
-                width: 95%;
+                width: 100%;
                 height: 100%;
                 background-color: $text-color;
                 border-left: 5px solid $title-color;
                 outline: none;
                 
-                font-size: 20px;
+                font-size: 18px;
                 padding-left: 10px;
 
             }
@@ -116,9 +125,16 @@ main{
        
             img{
                 background-color: $bg-button-color;
+                padding: 4px;
                 width: 2.5em;
                 height: 100%;   
-                text-align: center;            
+                text-align: center;
+                transition: 0.5s;    
+            }
+
+            #img_send:hover{
+                box-shadow: 2px 0px 5px 2px $form-color;
+                padding: 6px;
             }
             
             
@@ -127,14 +143,12 @@ main{
     }
 
     #ler_primeiro{
-        color: $bg-button-color;
+       
         font-weight: $weight_text;
 
-        display: flex;
-        align-items: center;
-
-        img{
-            fill: $bg-button-color;
+        a{
+            text-decoration: none;
+            color: $bg-button-color;
         }
     }
    
@@ -153,10 +167,11 @@ main{
 }
 
 .invalido{
-    outline: 3px solid rgb(150, 19, 19);
-
+    outline: 3px ridge $invalido;
+    transition: 0.4s;
 }
 
 .valido{
     outline: 3px solid #04D361;
+    transition: 0.4s;
 }
