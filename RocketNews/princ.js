@@ -47,7 +47,6 @@ emailInvalido = () =>{
 emailValido = () =>{
     const BOXEMAIL = document.getElementById('email')
     BOXEMAIL.className = "valido"
-
 }
 
 verificarTypeEmail = () =>{
