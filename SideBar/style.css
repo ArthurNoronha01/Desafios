@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dce4e3;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sideBar {
+  border: px solid red;
+  background-color: #18c29c;
+  height: 100%;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+.sideBar .burguer-icon {
+  border: px solid blue;
+  text-align: center;
+  height: 10%;
+}
+.sideBar .burguer-icon .img-burguer {
+  width: 3em;
+  border: px solid red;
+  padding: 8px;
+  border-radius: 10%;
+  margin-block: 20px;
+}
+.sideBar .burguer-icon .img-burguer:hover {
+  background-color: rgba(220, 226, 226, 0.8470588235);
+}
+.sideBar .group-icons {
+  border: px solid #084236;
+  height: 82%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.sideBar .group-icons .img_group {
+  padding: 10px;
+  border: px solid red;
+  border-radius: 15%;
+  width: 2.6em;
+  height: 2.6em;
+}
+.sideBar .group-icons .img_group:hover {
+  transition: 0.4s;
+  padding: 12px;
+  background-color: #dce4e3;
+}
+.sideBar .bottom-icon {
+  border: px solid black;
+  height: 10%;
+  text-align: center;
+  background-color: #8ed7c6;
+}
+.sideBar .bottom-icon img {
+  margin-block: 20px;
+}
+
+#title {
+  font-family: Poppins;
+  font-weight: 500;
+  color: #084236;
+  padding-block: 20px;
+}
+
+.menu-mobile {
+  border: px solid red;
+  background-color: #18c29c;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.4s;
+}/*# sourceMappingURL=style.css.map */

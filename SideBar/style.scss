@@ -1,0 +1,131 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//Variaveis
+
+$body-bg-color: #dce4e3;
+$green: #18c29c;
+$light-green: #8ed7c6;
+$light-gray: #dce4e3;
+$text-color: #084236;
+$bg-menu: #dce2e2d8;
+
+$fontFamily: Poppins;
+$font400: 400;
+$font500: 500;
+//Variaveis
+
+body{
+    background-color: $light-gray;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sideBar{
+    border: px solid red;
+    background-color: $green;
+    height: 100%;
+    width: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    transition: .4s;
+
+    .burguer-icon{
+        border: px solid blue;
+       
+        text-align: center;
+
+        height: 10%;
+
+        .img-burguer{
+            width: 3em;
+
+            border: px solid red;
+            padding: 8px;
+            border-radius: 10%;
+            margin-block: 20px;
+        }
+
+        .img-burguer:hover{
+            background-color: $bg-menu;
+        }
+    }
+
+    .group-icons{
+        border: px solid #084236;
+        height: 82%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+
+        .img_group{
+            padding: 10px;
+            border: px solid red;
+            border-radius: 15%;
+            width: 2.6em;
+            height: 2.6em;
+
+            
+        }
+
+        .img_group:hover{
+            transition: .4s;
+            padding: 12px;
+            background-color: $body-bg-color;
+        }
+    }
+
+    .bottom-icon{
+        border: px solid black;
+        height: 10%;
+        text-align: center;
+
+        background-color: $light-green;
+
+        img{
+            margin-block: 20px;
+        }
+    }
+}
+
+#title{
+    font-family: $fontFamily;
+    font-weight: $font500;
+    color: $text-color;
+
+    padding-block: 20px;
+}
+
+
+.menu-mobile{
+    border: px solid red;
+    background-color: $green;
+    height: 100%;
+    width: 25%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: .4s;
+}
