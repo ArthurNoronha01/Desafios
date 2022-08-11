@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;500 & display=swap');
 
 *{
     padding: 0;
@@ -15,13 +15,14 @@ $light-gray: #dce4e3;
 $text-color: #084236;
 $bg-menu: #dce2e2d8;
 
-$fontFamily: Poppins;
+$fontFamily: 'Poppins', serif;
 $font400: 400;
 $font500: 500;
 //Variaveis
 
 body{
     background-color: $light-gray;
+  
 }
 
 main{
@@ -32,6 +33,11 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+
+    p{
+        font-family: $fontFamily;
+        
+    }
 }
 
 .sideBar{
@@ -45,14 +51,21 @@ main{
     justify-content: space-between;
 
 
-    transition: .4s;
+    transition: .5s;
 
+    font-weight:$font400;
+    
     .burguer-icon{
         border: px solid blue;
+        
        
         text-align: center;
 
         height: 10%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
         .img-burguer{
             width: 3em;
@@ -61,11 +74,15 @@ main{
             padding: 8px;
             border-radius: 10%;
             margin-block: 20px;
+
+            cursor: pointer;
+
+            .img-burguer:hover{
+                background-color: $bg-menu;
+            }
         }
 
-        .img-burguer:hover{
-            background-color: $bg-menu;
-        }
+       
     }
 
     .group-icons{
@@ -74,10 +91,11 @@ main{
 
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
         gap: 20px;
 
+        transition: 0.6s;
         .img_group{
             padding: 10px;
             border: px solid red;
@@ -85,7 +103,7 @@ main{
             width: 2.6em;
             height: 2.6em;
 
-            
+            cursor: pointer;
         }
 
         .img_group:hover{
@@ -97,14 +115,22 @@ main{
 
     .bottom-icon{
         border: px solid black;
-        height: 10%;
+        height: 8%;
         text-align: center;
 
         background-color: $light-green;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img{
             margin-block: 20px;
+          
         }
+    }
+
+    .exit{
+        cursor: pointer;
     }
 }
 
@@ -117,15 +143,95 @@ main{
 }
 
 
+//******************Formatações para o menu OPEN*********************
+
+//box do menu, é que abre o menu. Já está sendo aplicada
 .menu-mobile{
     border: px solid red;
-    background-color: $green;
-    height: 100%;
-    width: 25%;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
+    width: 18%;
+    
+    transition: .6s;
+}
 
-    transition: .4s;
+//box dos textos. Objetivo: remover ela ao abrir o menu e fecha-la ao fechar menu
+.invisivel{
+    display: none;
+    
+}
+
+.visivel{
+    display: inline;
+}
+
+//menu-open: formatação utilizada quando o menu for aberto, vai possibilitar que as imagens e os textos fiquem alinhados. Objetivo: APLICA-LA ao abrir o menu e remove-la ao fechar o menu
+.menu-open{
+    border: px solid red;
+    width: 80%;
+    height: 8%;
+    padding-left: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    transition: .6s;
+
+    cursor: pointer;
+
+}
+
+
+//vai colocar o efeito de fundo na caixa do texto e imagem, devendo ser ativado somente quando o menu estiver aberto.
+.menu-open:hover{
+    background-color: $light-green;
+    transition: .3s;
+}
+
+
+#logo-open{
+    width: 6em;
+    height: 6em;
+
+}
+
+#perfil-open{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    gap: 15px;
+
+    .text-perfil{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 2px;
+    }
+
+    img{
+        width: 4em;
+        height: 2.5em;
+        margin: 0;
+        border-radius: 10%;
+
+        cursor: pointer;
+    }
+}
+
+.perfil-open-menu{
+    border: px solid black;
+    height: 8%;
+    text-align: center;
+
+    background-color: $light-green;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img{
+        margin-block: 30px;
+    }
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@400;500 & display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +17,9 @@ main {
   flex-wrap: wrap;
   gap: 20px;
 }
+main p {
+  font-family: "Poppins", serif;
+}
 
 .sideBar {
   border: px solid red;
@@ -25,12 +29,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.4s;
+  transition: 0.5s;
+  font-weight: 400;
 }
 .sideBar .burguer-icon {
   border: px solid blue;
   text-align: center;
   height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .sideBar .burguer-icon .img-burguer {
   width: 3em;
@@ -38,8 +46,9 @@ main {
   padding: 8px;
   border-radius: 10%;
   margin-block: 20px;
+  cursor: pointer;
 }
-.sideBar .burguer-icon .img-burguer:hover {
+.sideBar .burguer-icon .img-burguer .img-burguer:hover {
   background-color: rgba(220, 226, 226, 0.8470588235);
 }
 .sideBar .group-icons {
@@ -47,9 +56,10 @@ main {
   height: 82%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  transition: 0.6s;
 }
 .sideBar .group-icons .img_group {
   padding: 10px;
@@ -57,6 +67,7 @@ main {
   border-radius: 15%;
   width: 2.6em;
   height: 2.6em;
+  cursor: pointer;
 }
 .sideBar .group-icons .img_group:hover {
   transition: 0.4s;
@@ -65,16 +76,22 @@ main {
 }
 .sideBar .bottom-icon {
   border: px solid black;
-  height: 10%;
+  height: 8%;
   text-align: center;
   background-color: #8ed7c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .sideBar .bottom-icon img {
   margin-block: 20px;
 }
+.sideBar .exit {
+  cursor: pointer;
+}
 
 #title {
-  font-family: Poppins;
+  font-family: "Poppins", serif;
   font-weight: 500;
   color: #084236;
   padding-block: 20px;
@@ -82,11 +99,71 @@ main {
 
 .menu-mobile {
   border: px solid red;
-  background-color: #18c29c;
   height: 100%;
-  width: 25%;
+  width: 18%;
+  transition: 0.6s;
+}
+
+.invisivel {
+  display: none;
+}
+
+.visivel {
+  display: inline;
+}
+
+.menu-open {
+  border: px solid red;
+  width: 80%;
+  height: 8%;
+  padding-left: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.menu-open:hover {
+  background-color: #8ed7c6;
+  transition: 0.3s;
+}
+
+#logo-open {
+  width: 6em;
+  height: 6em;
+}
+
+#perfil-open {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  gap: 15px;
+}
+#perfil-open .text-perfil {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: 0.4s;
+  gap: 2px;
+}
+#perfil-open img {
+  width: 4em;
+  height: 2.5em;
+  margin: 0;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.perfil-open-menu {
+  border: px solid black;
+  height: 8%;
+  text-align: center;
+  background-color: #8ed7c6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.perfil-open-menu img {
+  margin-block: 30px;
 }/*# sourceMappingURL=style.css.map */

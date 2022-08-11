@@ -11,20 +11,46 @@
     <main>
         <section id="barraSide" class="sideBar">
             <div class="burguer-icon">
+                <img id="logo-open"  class="invisivel" src="images/logo.svg" alt="Logo da empresa Vet" title="Logo Vet">
                 <img onclick="menuMobile()" id="icon-menu" class="img-burguer" src="images/menu.svg" alt="">
             </div>
                 <div class="group-icons">
-                    <img  class="img_group" src="images/search.svg" alt="">
-                    <img class="img_group" src="images/grid.svg" alt="">
-                    <img class="img_group" src="images/pet.svg" alt="">
-                    <img class="img_group" src="images/user.svg" alt="">
-                    <img class="img_group" src="images/vet.svg" alt="">
-                    <img class="img_group" src="images/settings.svg" alt="">
+                    <div>
+                        <img class="img_group" src="images/search.svg" alt="Icone de Lupa">
+                        <p class="invisivel">Buscar</p>
+                    </div>
+                    <div>
+                        <img class="img_group" src="images/grid.svg" alt="Grid">
+                        <p class="invisivel">DashBord</p>
+                    </div>
+                    <div>
+                        <img class="img_group" src="images/pet.svg" alt="Pets">
+                        <p class="invisivel">Pets</p>
+                    </div>
+                    <div>
+                        <img class="img_group" src="images/user.svg" alt="Usuario">
+                        <p class="invisivel">Clientes</p>
+                    </div>
+                    <div >
+                        <img class="img_group" src="images/vet.svg" alt="Vet">
+                        <p class="invisivel">Vets</p>
+                    </div>
+                    <div>
+                        <img class="img_group" src="images/settings.svg" alt="Configurações">
+                        <p class="invisivel">Ajustes</p>
+                    </div>
                 </div>
             
             
             <div class="bottom-icon">
-                <img src="images/log-out.svg" alt="">
+                <div id="perfil-open">
+                    <img id="usuario" class="invisivel"src="images/perfil_ritinha.png" alt="veterinaria">
+                    <div class="text-perfil" >
+                        <h4 class="invisivel">Maria Rita</h4>
+                        <p class="invisivel">Veterinária</p>
+                    </div>
+                </div>
+                <img  class="exit" src="images/log-out.svg" alt="saída" title="Sair">
             </div>
         </section>
 
@@ -35,4 +61,5 @@
     </main>
 </body>
 <script src="princ.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </html>
