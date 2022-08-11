@@ -41,7 +41,6 @@ main{
 }
 
 .sideBar{
-    border: px solid red;
     background-color: $green;
     height: 100%;
     width: 5%;
@@ -55,10 +54,7 @@ main{
 
     font-weight:$font400;
     
-    .burguer-icon{
-        border: px solid blue;
-        
-       
+    .burguer-icon{    
         text-align: center;
 
         height: 10%;
@@ -70,7 +66,6 @@ main{
         .img-burguer{
             width: 3em;
 
-            border: px solid red;
             padding: 8px;
             border-radius: 10%;
             margin-block: 20px;
@@ -86,7 +81,6 @@ main{
     }
 
     .group-icons{
-        border: px solid #084236;
         height: 82%;
 
         display: flex;
@@ -98,7 +92,6 @@ main{
         transition: 0.6s;
         .img_group{
             padding: 10px;
-            border: px solid red;
             border-radius: 15%;
             width: 2.6em;
             height: 2.6em;
@@ -114,7 +107,6 @@ main{
     }
 
     .bottom-icon{
-        border: px solid black;
         height: 8%;
         text-align: center;
 
@@ -146,9 +138,7 @@ main{
 //******************Formatações para o menu OPEN*********************
 
 //box do menu, é que abre o menu. Já está sendo aplicada
-.menu-mobile{
-    border: px solid red;
-    
+.menu-mobile{    
     height: 100%;
     width: 18%;
     
@@ -167,7 +157,6 @@ main{
 
 //menu-open: formatação utilizada quando o menu for aberto, vai possibilitar que as imagens e os textos fiquem alinhados. Objetivo: APLICA-LA ao abrir o menu e remove-la ao fechar o menu
 .menu-open{
-    border: px solid red;
     width: 80%;
     height: 8%;
     padding-left: 10px;
@@ -222,7 +211,6 @@ main{
 }
 
 .perfil-open-menu{
-    border: px solid black;
     height: 8%;
     text-align: center;
 
