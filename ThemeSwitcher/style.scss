@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ***************  Variaveis *****************************
+$dark: #292C35;
+$light: #F1F1F1;
+$label: #111;
+
+// ***************  Variaveis *****************************
+
+body{
+    background-color: $dark;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark{
+    background-color: $label;
+}
+
+.light{
+    background-color: $light;
+}
+.area-theme{
+    padding: 10px;
+    width: 15%;
+    height: 12%;
+       
+    border-radius: 25px;
+
+    background-color: $dark;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    //vou remover a imagem da lua, assim a bolinha vai ser "empurrada" até onde ela estava
+    .moon-img{
+        width: 20%;
+        height: 90%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+      //eu devo remover o display none daq, pois ele vai empurrar a bolinha
+    .sun-img{
+        width: 20%;
+        height: 90%;
+
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+
+    //Devo fazer com que a bola fique em um position: absolute dentro da div.
+    .static-button{
+        width: 30%;
+        height: 90%;
+        border-radius: 50%;
+        //antes de usar o absolute, estabelece o relative na div pai, assim vai ter um controle sob ele.
+        position: absolute;
+        left: 69%;
+       
+        background-color: white;
+    }
+}
+
+.invisivel{
+    visibility: hidden;
+}
+
+.moveing{
+    width: 30%;
+    height: 90%;
+    border-radius: 50%;
+    position: absolute;
+    right: 69%;
+
+    background-color: white;
+}
+
