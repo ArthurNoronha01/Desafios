@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    border: 0;
+    list-style: none;
+}
+
+$header-basic: #ffcc29;
+$bg-header: #1d539e;
+$color: #828799;
+$bg-main: #dddee0;
+$color-title: #f9fbfc9c;
+$bg-cards: #f9fbfc;
+$font-family: 'Open Sans';
+$font-400: 400;
+$font-600: 600;
+$font-700: 700;
+
+body{
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 24px;
+    font-family: $font-family;
+
+    background-color: $bg-main;
+}
+
+#header{
+    width: 100%;
+    height: 50%;
+ 
+    background-color: $bg-header;
+
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    
+    .box-title{
+        border: px solid red;
+        width: 50%;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        position: absolute;
+
+        z-index: 1;
+
+        h1{
+            color: $bg-cards;
+            font-weight: 700;
+        }
+        p{
+            margin: auto;
+            font-size: 1rem;
+            color: $color-title;
+            font-weight: 400;
+            width: 32rem;
+        }
+    }
+}
+
+.small{
+    font-size: 0.9rem;
+    display: inline;
+}
+
+.text{
+    font-size: 0.9rem;
+    color: $color;
+    padding-bottom: 18px;
+}
+
+.priece{
+    font-size: 1.8rem;
+    font-weight: $font-600;
+}
+
+#main{
+    border: px solid red;
+    width: 80%;
+    height: 65%;
+    position: absolute;
+    top: 235px;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .cards{
+        border: px solid blue;
+        height: 100%;
+        width: 30%;
+        border-radius: 10px;
+        font-size: 1.2rem;
+
+        background-color: $bg-cards;
+        
+    }
+
+    .cards-normal{
+        height: 95%;
+        font-size: 1rem;
+       
+        .title-card-normal{
+            padding: 20px;
+        }
+
+    }
+    
+    .cards-popular{
+        border: px solid red;
+        align-self: baseline;
+
+        .destaque{
+            border: px solid red;
+            width: 100%;
+            height: 17%;
+            border-radius: 10px 10px 0 0;
+          
+            background-color: $header-basic;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 80px;
+
+            p{
+                border: px solid red;
+                background-color: $bg-header;
+                color: $bg-cards;
+                padding: 5px 15px;
+                border-radius: 15px;
+                width: 60px;
+                text-align: center;
+
+                font-size: 0.8rem;
+                font-weight: 400;
+              
+               
+            }
+            h2{
+                color: $bg-header;
+                font-weight: 600;
+                
+                
+            }
+            
+        }
+        .bt-assinar{
+            border: px solid red;
+            margin: auto;
+            width: 100%;
+            height: 18%;
+        
+            text-align: center;
+           
+            input{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                font-size: 1.2rem;
+        
+                background-color: $bg-header;
+                color: $bg-cards;
+            }
+        }
+    }
+}
+
+.description{
+    border: px solid red;
+    height: 73%;
+    padding: 20px ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .text-card-popular{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        border-bottom: 0.2px solid $color;
+
+        h3{
+            display: inline-block;
+        }
+    }
+}
+
+.list-check{
+    font-size: 1rem;
+   
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            color: $color;
+        }
+    }
+}
+
+
+.bt-assinar-normal{
+    border: px solid red;
+    margin: auto;
+    width: 100%;
+    height: 18%;
+    
+    text-align: center;
+   
+    input{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-weight: $font-400;
+
+        color: $bg-header;
+        background-color: $bg-cards;
+        border: 1px solid $bg-header;
+    }
+
+ 
+}
+
+.frist-bt{
+    margin-top: 70px;
+}
