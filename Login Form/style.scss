@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: 0;
+}
+
+//Variaveis *****************************
+
+$text-base: #afb6c2;
+$text-title: #d4ccb6;
+$background: #191816;
+$form-background: #24221f;
+$primary-color: #ffc632;
+$font-family: 'Poppins';
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+
+//Variaveis *****************************
+
+a{
+   text-decoration: none;
+   color: $primary-color;
+   font-weight: $font-600;
+   font-size: 0.9rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    
+
+    display: flex;
+}
+
+
+.area-login{
+    width: 50%;
+    height: 100%;
+    border: px solid red;
+    color: $text-base;
+    font-family: $font-family;
+   
+    display: flex;
+    flex-direction: column;
+
+    background-color: $background;
+
+    .area-log{
+        padding: 25px;
+    }
+
+    .box-form{
+        border: px solid black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      
+        .form{
+            width: 65%;
+            height: 75%;
+            border: px solid blue;
+            padding: 50px 80px;
+
+            background-color: $form-background;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+
+            .text-login{
+                border: px solid red;
+
+                h2{
+                    color: $text-title;
+                
+                }
+                p{ 
+                    color: $text-base;
+                }
+                .title-form{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 6px;
+                }
+            }
+
+            .inputs-form{
+                border: px solid blue;
+               
+                .formulario{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    margin-bottom: 20px;
+
+                    .box-input{
+                        
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .icon-input{
+                            border: px solid red;
+                            position: relative;
+                          
+                            display: flex;
+         
+                            .img-inputs{
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+
+                            }
+
+                            .img-inputs-eye{
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                            }
+                        }
+
+                        .entrada{
+                            border: px solid red;
+                            width: 100%;
+                            height: 40px;
+                            padding-left: 40px;
+                            border-radius: 4px;
+
+                            background-color: $form-background;
+                            border: 1px solid $text-base;
+
+                            color: $text-base;
+                            outline: none;
+                        }
+
+                        .entrada:focus{
+                            border: 1px solid $primary-color;
+                        }
+ 
+                    }
+                }
+
+                .mark{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: px solid blue;
+                 
+                    
+                    .lembre-me{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        border: px solid red;
+                       padding-left: 5px;
+
+                        font-size: 0.8rem;
+                        height: 50px;
+
+                        .check-box {
+                            all: unset;
+
+                            height: 40%;
+                            width: 20px;
+                            border: 1px solid $text-base;
+                            background-color: $form-background;                                                      
+                         }
+
+                         .check-box:checked{
+                            background-color: $primary-color;
+                         }
+                    }
+                }
+            }
+
+            .registre{
+                border: px solid red;
+                text-align: center;
+
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .bt-login{
+                    border: px solid blue;
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 5px;
+
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        .cadastrar{
+            border: px solid red;
+            text-align: center;            
+            p{
+
+                display: inline-block;
+                width: 70%;
+                color: $primary-color; 
+                font-weight: $font-400;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+}
+
+.check-box{
+    border: 4px solid red;
+}
+
+.esqueci a{
+    font-size: 0.8rem;
+}
+
+
+.none{
+    display: none;
+}
+
+
+//Area imagem *****************************
+
+.area-img{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
