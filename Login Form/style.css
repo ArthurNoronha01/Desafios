@@ -28,7 +28,6 @@ main {
 .area-login {
   width: 50%;
   height: 100%;
-  border: px solid red;
   color: #afb6c2;
   font-family: "Poppins";
   display: flex;
@@ -39,7 +38,6 @@ main {
   padding: 25px;
 }
 .area-login .box-form {
-  border: px solid black;
   width: 100%;
   height: 100%;
   display: flex;
@@ -49,16 +47,12 @@ main {
 .area-login .box-form .form {
   width: 65%;
   height: 75%;
-  border: px solid blue;
   padding: 50px 80px;
   background-color: #24221f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-}
-.area-login .box-form .form .text-login {
-  border: px solid red;
 }
 .area-login .box-form .form .text-login h2 {
   color: #d4ccb6;
@@ -72,9 +66,6 @@ main {
   gap: 10px;
   margin-bottom: 6px;
 }
-.area-login .box-form .form .inputs-form {
-  border: px solid blue;
-}
 .area-login .box-form .form .inputs-form .formulario {
   display: flex;
   flex-direction: column;
@@ -87,7 +78,6 @@ main {
   gap: 5px;
 }
 .area-login .box-form .form .inputs-form .formulario .box-input .icon-input {
-  border: px solid red;
   position: relative;
   display: flex;
 }
@@ -102,7 +92,6 @@ main {
   right: 10px;
 }
 .area-login .box-form .form .inputs-form .formulario .box-input .entrada {
-  border: px solid red;
   width: 100%;
   height: 40px;
   padding-left: 40px;
@@ -121,13 +110,11 @@ main {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  border: px solid blue;
 }
 .area-login .box-form .form .inputs-form .mark .lembre-me {
   display: flex;
   align-items: center;
   gap: 5px;
-  border: px solid red;
   padding-left: 5px;
   font-size: 0.8rem;
   height: 50px;
@@ -136,14 +123,17 @@ main {
   all: unset;
   height: 40%;
   width: 20px;
+  border-radius: 5px;
   border: 1px solid #afb6c2;
   background-color: #24221f;
 }
 .area-login .box-form .form .inputs-form .mark .lembre-me .check-box:checked {
   background-color: #ffc632;
 }
+.area-login .box-form .form .inputs-form .mark .esqueci a {
+  font-size: 0.8rem;
+}
 .area-login .box-form .form .registre {
-  border: px solid red;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -152,14 +142,12 @@ main {
   gap: 15px;
 }
 .area-login .box-form .form .registre .bt-login {
-  border: px solid blue;
   width: 100%;
   height: 60px;
   border-radius: 5px;
   background-color: #ffc632;
 }
 .area-login .box-form .cadastrar {
-  border: px solid red;
   text-align: center;
 }
 .area-login .box-form .cadastrar p {
@@ -170,18 +158,6 @@ main {
   font-size: 0.8rem;
 }
 
-.check-box {
-  border: 4px solid red;
-}
-
-.esqueci a {
-  font-size: 0.8rem;
-}
-
-.none {
-  display: none;
-}
-
 .area-img {
   width: 50%;
   height: 100%;
@@ -190,4 +166,8 @@ main {
 .area-img img {
   width: 100%;
   height: 100%;
+}
+
+.none {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

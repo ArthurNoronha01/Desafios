@@ -7,13 +7,14 @@
     <meta name="author" content="Arthur Noronha">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Login Form</title>
 </head>
 <body>
     <main>
         <section class="area-login">
             <div class="area-log">
-                <img src="images/logo.svg" alt="">
+                <img src="images/logo.svg" alt="logo">
             </div>
             <div class="box-form">
                 <div class="form">
@@ -29,16 +30,16 @@
                         <div class="box-input">
                             <label for="email">E-mail</label>
                             <div class="icon-input">
-                                <img class="img-inputs" src="images/mail.svg" alt="envelope">
-                                <img class="img-inputs none"src="images/mail-focus.svg" alt="">
+                                <img class="img-inputs" src="images/mail.svg" alt="envelope" id="img-email" >
+                                <img id="none-email" class="img-inputs none"src="images/mail-focus.svg" alt="" >
                                 <input class="entrada" type="email" id="email" placeholder="Digite seu e-mail">
                             </div>
                         </div>
                         <div class="box-input">
                             <label for="senha">Senha</label>
-                            <div class="icon-input">
-                                <img class="img-inputs none" src="images/lock-focus.svg" alt="imagem de cadeado cor amarela com focus">
+                            <div         class="icon-input">                
                                 <img class="img-inputs" src="images/lock.svg" alt="imagem de cadeado cor cinza sem focus">
+                                <img class="img-inputs none" src="images/lock-focus.svg" alt="imagem de cadeado cor amarela com focus" id="none-pass">
                                 <input class="entrada" type="password" id="senha" placeholder="Digite sua Senha">
                                 <img class="img-inputs-eye" src="images/eye.svg" alt="olho para visualização da senha" id="eye-password">
                             </div>
@@ -56,7 +57,7 @@
                     </div>
                     <div class="registre">
                         <div>
-                            <a href="#"><input class="bt-login" type="button" value="ENTRAR" id="bt-entrar"></a>
+                            <a href="#"><input class="bt-login" type="button" value="ENTRAR" id="bt-entrar" onclick="verificarEmail()"></a>
                         </div>
                         <div class="cadastrar">
                             <p>Não tem uma conta?<a href="#"> Registre-se</a></p>
@@ -72,4 +73,5 @@
         </section>
     </main>
 </body>
+    <script src="index.js"></script>
 </html>

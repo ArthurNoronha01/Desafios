@@ -38,7 +38,7 @@ main{
     width: 15%;
     height: 12%;
        
-    border-radius: 25px;
+    border-radius: 20px;
 
     background-color: $dark;
 
@@ -61,6 +61,7 @@ main{
 
       //eu devo remover o display none daq, pois ele vai empurrar a bolinha
     .sun-img{
+        border: 1px solid;
         width: 20%;
         height: 90%;
 
