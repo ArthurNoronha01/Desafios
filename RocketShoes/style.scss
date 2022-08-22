@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+//Variaveis 
+
+$button: #FF0000;
+$background-image:  #C4C4C4;
+$background-all: #E5E5E5;
+$color-all: #000;
+$color-footer: #000;
+$text-description-text: #9C9696;
+
+$font-family: 'Roboto';
+
+//Variaveis 
+
+// ************************ - Formatações Gerais - ************************
+
+header{
+    border: px solid red;
+    position: absolute;
+   
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .icon-logo{
+        border: px solid red;
+        width: 60px;
+        height:60px;
+
+        cursor: pointer;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .icon-bag{
+        border: px solid red;
+        width: 30px;
+        height:30px;
+
+        cursor: pointer;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .link-header{
+        border: px solid blue;
+        display: flex;
+        justify-content: space-between;
+
+        width: 50%;
+        height: 35%;
+        padding: 3px;
+
+        a{
+            color: $color-all;
+            font-family: $font-family;
+            font-weight: 700;
+        }
+    }
+
+    .box-search{
+        border: px solid red;
+        height: 1.9rem;
+
+        display: flex;
+        align-items: center;
+
+        input{
+            width: 100%;
+            height: 100%;
+
+            padding-left: 30px;
+        }
+
+        img{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            padding-left: 2px;
+        }
+    }
+}
+
+
+main{
+    display: flex;
+   
+    width: 100%;
+    height: 85%;
+
+    .area-text{
+        background-color:$background-all ; 
+        width: 36%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .description-product{
+            border: px solid red;
+            width: 50%;
+            height: 70%;
+
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+
+            font-family: $font-family;
+
+            .text-product{
+
+                h1{
+                    border: px solid blue;
+                    font-size: 2.5rem;
+                    margin-bottom: 20px;
+                }
+    
+                p{
+                    font-size: 0.9rem;
+                    color: $text-description-text;
+                }
+            } //text product
+
+            h2{
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+
+            .button-product{
+                border: 1px solid red;
+                background-color: $button;
+                color: $background-all;
+
+                height: 20%;
+                font-size: 1.5rem;
+                font-weight: 700;
+
+                cursor: pointer;                                
+            }
+        }
+    }
+
+
+
+    .area-image{
+        background-color: $background-image;
+        width: 64%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .imagens{
+            border: px solid red;
+            width: 95%;
+            height: 70%;
+            
+            .img-foco{
+                padding-top: 30px;
+                border: px solid blue;
+                width: 100%;
+                height: 80%;
+
+                text-align: center;
+               
+                img{
+                    border: px solid red;
+                    width: 50%;
+                    height: 100%;
+                }
+            }
+
+            .box-images{
+                border: px solid yellow;
+                display: flex;
+
+                width: 100%;
+                height: 25%;
+                padding-block:5px;
+
+                .second-image{
+                    border: px solid blue;
+                    width: 20%;
+                    height: 100%;
+                    margin: auto;                                        
+                }   
+                img{
+                    width: 100%;
+                    height: 100%;
+                }             
+            }
+        }
+    }
+}
+
+
+footer{
+   background-color: $background-all;
+    width: 100%;
+    height: 15%;
+   
+    font-family: $font-family;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .video-footer{
+        overflow: hidden;
+        height: 100%;
+        width: 10%;
+
+        cursor: pointer;
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .social{
+        border: px solid blue;
+        width: 60%;
+        ul{
+            border: px solid red;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a{
+            color: $color-all;
+            font-family: $font-family;
+            font-weight: 700;
+        }
+    }
+
+    .bt-explore{
+        border: px solid blue;
+        height: 100%;
+        width: 20%;
+
+        display: flex;
+
+        text-align: center;
+
+        input{
+            width: 100%;
+            height: 100%;
+
+            background-color: $color-footer;
+            color: #ffff;
+
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        img{
+            height: 23px;
+            width: 23px;
+
+            position: absolute;
+            bottom: 43px;
+            right: 52px;
+        }
+    }
+}
