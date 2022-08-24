@@ -30,7 +30,6 @@ $font-family: 'Roboto';
 // ************************ - Formatações Gerais - ************************
 
 header{
-    border: px solid red;
     position: absolute;
    
     width: 100%;
@@ -42,7 +41,6 @@ header{
     align-items: center;
 
     .icon-logo{
-        border: px solid red;
         width: 60px;
         height:60px;
 
@@ -55,7 +53,6 @@ header{
     }
 
     .icon-bag{
-        border: px solid red;
         width: 30px;
         height:30px;
 
@@ -68,7 +65,6 @@ header{
     }
 
     .link-header{
-        border: px solid blue;
         display: flex;
         justify-content: space-between;
 
@@ -84,7 +80,6 @@ header{
     }
 
     .box-search{
-        border: px solid red;
         height: 1.9rem;
 
         display: flex;
@@ -124,7 +119,6 @@ main{
         justify-content: center;
 
         .description-product{
-            border: px solid red;
             width: 50%;
             height: 70%;
 
@@ -137,7 +131,6 @@ main{
             .text-product{
 
                 h1{
-                    border: px solid blue;
                     font-size: 2.5rem;
                     margin-bottom: 20px;
                 }
@@ -154,7 +147,6 @@ main{
             }
 
             .button-product{
-                border: 1px solid red;
                 background-color: $button;
                 color: $background-all;
 
@@ -179,36 +171,38 @@ main{
         align-items: center;
         justify-content: center;
 
-        .imagens{
-            border: px solid red;
+        .imagens{           
             width: 95%;
             height: 70%;
             
             .img-foco{
-                padding-top: 30px;
-                border: px solid blue;
-                width: 100%;
+                background-color: #fff;
+
+                width: 50%;
                 height: 80%;
 
                 text-align: center;
+                margin: auto;
+                overflow: hidden;
                
                 img{
-                    border: px solid red;
-                    width: 50%;
+                    width: 100%;
                     height: 100%;
+
+                    transform-origin: center center;
+                    object-fit: cover;
                 }
             }
 
             .box-images{
-                border: px solid yellow;
                 display: flex;
 
                 width: 100%;
                 height: 25%;
-                padding-block:5px;
+                padding-top:5px;
+                margin-top: 15px;
 
                 .second-image{
-                    border: px solid blue;
                     width: 20%;
                     height: 100%;
                     margin: auto;                                        
@@ -249,10 +243,8 @@ footer{
     }
 
     .social{
-        border: px solid blue;
         width: 60%;
         ul{
-            border: px solid red;
             display: flex;
             justify-content: space-between;
         }
@@ -265,7 +257,6 @@ footer{
     }
 
     .bt-explore{
-        border: px solid blue;
         height: 100%;
         width: 20%;
 
