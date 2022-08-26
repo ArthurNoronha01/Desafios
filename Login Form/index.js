@@ -42,11 +42,23 @@ verificarEmail = () =>{
         alert('preencha os espaços corretamente')
         return
     }
-    if((email.length < 18 || email.length > 40) || senha.length < 3){
-        alert('por favor, preencha com as quantidades adequadas')
+    if(email.length < 18 || email.length > 40){
+        alert('A quantidade de caracteres não satisfaz as exigências')
         return
-    }if(email.indexOf('@') == -1 || email.indexOf('.') == -1 || (email.indexOf('gmail') == -1 && email.indexOf('hotmail') == -1 && email.indexOf(' ') == -1 && senha.indexOf(' ') == -1)){
-       alert('Por favor, preencha o seu e-mail corretamente')
+    }if(senha.length > 18 || senha.length < 3){
+        alert('A quantidade de caracteres não satisfaz as exigências, a senha deve conter mais de 3 e menos de 18 caracteres')
+        return
+    }
+    if(!senha.match(/[a-z]/g)){
+        alert('por favor, coloque ao menos uma letra')
+        return
+    }
+    if( !senha.match(/[0-9]/g)){
+        alert('por favor, insira ao menos um número')
+        return
+    }
+    if(email.indexOf('@') == -1 || email.indexOf('.') == -1 || (email.indexOf('gmail') == -1 && email.indexOf('hotmail') == -1 && email.indexOf(' ') == -1 && senha.indexOf(' ') == -1)){
+       alert('Por favor, preencha o seu e-mail corretamente, sendo obrigátorio os caracteres :"@, . , com"')
        return
     }
     else{
@@ -58,7 +70,7 @@ verificarEmail = () =>{
         //será enviado o obj para oo array
         USUARIOS.push(obj)
 
-        alert('E-mail cadastrado com sucesso.')
+        alert('Acesso bem sucedido')
         EMAIL.value = ''
         SENHA.value = ''
     }
