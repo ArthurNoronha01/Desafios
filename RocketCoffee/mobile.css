@@ -37,6 +37,7 @@
     height: 30%;
     text-align: center;
     z-index: 1000;
+    cursor: pointer;
   }
   header .header-top-mobile .icon-burguer-open img {
     width: 80%;
@@ -78,6 +79,15 @@
     color: #FFF;
     font-weight: 700;
     background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  .area-main-mobile .button-mobile:hover {
+    box-shadow: 0px 0px 15px #8257E5;
+    transition: 0.4s;
+  }
+  .area-main-mobile .button-mobile:hover input {
+    font-weight: 700;
+    color: #FFF;
   }
   .area-main-mobile .painel-mobile .text-painel {
     color: #E1E1E6;

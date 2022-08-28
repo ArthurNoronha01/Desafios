@@ -71,6 +71,7 @@
     padding: 8px;
     border-radius: 5px;
     z-index: 1000;
+    cursor: pointer;
   }
   header .take-coffee input {
     width: 100%;

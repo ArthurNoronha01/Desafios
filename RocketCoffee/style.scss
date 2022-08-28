@@ -103,6 +103,7 @@ header{
         border-radius: 5px;
        
         z-index: 1000;
+        cursor: pointer;
         input{
             width: 100%;
             height: 100%;
@@ -147,7 +148,6 @@ main{
         @keyframes bounce {
             from {
                 transform: translateY(0px);
-                // opacity: 0.8;
             }
             to {
                 transform: translateY(10px);
