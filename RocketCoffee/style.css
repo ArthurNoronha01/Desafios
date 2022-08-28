@@ -1,0 +1,167 @@
+@media (min-width: 1440px) {
+  @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Manrope";
+    background-color: #000;
+    overflow: hidden;
+  }
+  a {
+    text-decoration: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    height: 15%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  header .area-log {
+    width: 15%;
+    text-align: center;
+  }
+  header .area-nav {
+    width: 65%;
+    height: 50%;
+    z-index: 1000;
+  }
+  header .area-nav nav {
+    width: 100%;
+    height: 100%;
+  }
+  header .area-nav nav ul {
+    width: 100%;
+    height: 100%;
+    padding-block: 2px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+  header .area-nav nav ul li {
+    height: 50%;
+    width: 50%;
+    padding-inline: 2px;
+    text-align: center;
+  }
+  header .area-nav nav ul li a {
+    color: #FFF;
+    font-weight: 400;
+  }
+  header .area-nav nav ul li:hover a {
+    font-weight: 700;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.177);
+  }
+  header .take-coffee {
+    border: 1.5px solid #8257E5;
+    width: 15%;
+    height: 38%;
+    padding: 8px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  header .take-coffee input {
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    color: #E1E1E6;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  header .take-coffee:hover {
+    box-shadow: 0px 0px 15px #8257E5;
+    transition: 0.4s;
+  }
+  header .take-coffee:hover input {
+    font-weight: 700;
+    color: #FFF;
+  }
+  main {
+    width: 60%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    position: relative;
+  }
+  main .area-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 97%;
+    width: 100%;
+    position: absolute;
+    animation: bounce 2.5s infinite alternate;
+    -webkit-animation: bounce 1.5s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  main .text-main {
+    text-align: center;
+    color: #FFF;
+    margin-top: 12px;
+    top: 30px;
+  }
+  main .text-main h1 {
+    font-size: 4.5rem;
+  }
+  main .area-img-coffee {
+    height: 70%;
+    width: 80%;
+  }
+  main .area-img-coffee img {
+    height: 100%;
+    width: 100%;
+  }
+  .img-bottom-left {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+  }
+  .img-bottom-left img {
+    width: 100%;
+    height: 100%;
+  }
+  .img-top-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .img-top-right img {
+    width: 100%;
+    height: 100%;
+  }
+  .transparente {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px #8257E5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .none-web {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

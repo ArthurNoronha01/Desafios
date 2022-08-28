@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Noronha">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>RocketCoffee</title>
+</head>
+<body>
+    <div class="img-top-right none-mobile" >
+        <img src="assets/blur-2.png" alt="Blur do top a direita">
+    </div>
+    <div class="img-bottom-left none-mobile">
+        <img src="assets/blur-1.png" alt="blur de baixo a esquerda">
+    </div>
+    <div class="img-bottom-mobile none-web">
+        <img src="assets/blur-mobile.png" alt="blur mobile">
+    </div>
+    <header>
+        <div class="area-log none-mobile ">
+            <img src="assets/logo-desktop.svg" alt="Logo web"  title="Logo rocketCoffee">
+        </div>
+        <div class="area-nav none-mobile">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Recompensas</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Lojas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-top-mobile none-web"><!--Header Mobile-->
+            <div class="log-mobile">
+                <img src="assets/logo-mobile.svg" alt="logo mobile" title="logo rocketCoffee">
+            </div>
+            <div class="icon-burguer-open" id="button-menu">
+                <img src="assets/menu-buguer-open.svg" alt="menu burguer open" id="img-open">
+                <img class="disabled" src="assets/menu-buguer-close.svg" alt="menu burguer close"  id="img-close">
+            </div>
+        </div> <!--Header Mobile-->
+        <div class="take-coffee none-mobile">
+            <input type="button" value="PEGAR MEU CAFÉ">
+        </div>
+    </header>
+    <main>
+        <div class="menu-open-mobile none-web disabled " id="menu-mobile">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Recompensas</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Lojas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="area-main none-mobile">
+            <div class="text-main none-mobile">
+                <h1>Great Coffee</h1>
+                <h1 class="transparente">< Great Code/ ></h1>
+            </div>
+            <div class="area-img-coffee none-mobile">
+                <img src="assets/rocket-coffee.png" alt="copos de café">
+            </div>
+        </div>
+        <div class="area-main-mobile none-web">
+            <div class="text-mobile">
+                <h2>O café que fará seu código decolar para o próximo nível.</h2>
+            </div>
+            <div class="button-mobile">
+                <input type="button" value="PEGAR MEU CAFÉ">
+                <img src="assets/arrow.svg" alt="setinha para a esquerda">
+            </div>
+            <div class="painel-mobile">
+                <div class="text-painel">
+                    <h1>Great Coffee</h1>
+                    <h1 class="transparente">< Great Coffee/></h1>
+                </div>
+                <div class="img-painel">
+                    <img src="assets/rocket-coffee.png" alt="copos de café">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
